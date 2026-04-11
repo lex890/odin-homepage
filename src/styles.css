@@ -1,3 +1,80 @@
-body {
-  background-color: rebeccapurple;
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100vw; 
+
+  box-sizing: border-box;
+  font-family: "Playfair Display", Roboto;
+  font-size: 24px;
 }
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+header .bg {
+  background-color: rebeccapurple;
+  position: absolute;
+
+  left: -40%;
+  top: -16%;
+
+  width: 150vw;
+  height: 20em;
+  transform: rotate(-25deg);
+}
+header .logo{
+  position: relative;
+}
+header .logo::before {
+  content: 'アシュリー ナカニシ';
+  position: absolute;
+
+  top: 5%;
+  right: 10%;
+  width: 1em;
+
+  font-size: 1.1em;
+  color: white;
+  text-shadow: 1px 5px 3px #1C6EA4;
+}
+header .logo img {
+  padding: 1em;
+  object-fit: cover;
+}
+header .about-me .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .about-me .info h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  text-align: center;
+}
+header .about-me .info p {
+  text-align: start;
+  font-family: Arial;
+  font-size: 21px;
+  color: rgb(206, 206, 206);
+  padding: 1em 0.6em;
+}
+header .about-me .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+header .about-me .socials img {
+  width: 1.5em;
+}
+
